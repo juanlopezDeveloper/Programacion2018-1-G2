@@ -8,7 +8,6 @@ class Habitacion:
         self.numero = numero
         self.tipo = tipo
 
-
     def reservar(self, nueva_reserva):
         for reserva in self.reservas:
             if(reserva.coliciona(nueva_reserva)):
