@@ -1,3 +1,5 @@
+# Nos muestr la estructura tipo html de la interfaz gráfica.
+
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>Dialog</class>
