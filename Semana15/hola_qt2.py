@@ -2,6 +2,10 @@ import sys
 from PyQt5 import QtWidgets
 
 def window():
+    """
+    Función que muestra graficamente la interfaz
+    :return: Interfaz grafica
+    """
     app = QtWidgets.QApplication(sys.argv)
     w = QtWidgets.QWidget()
     etiquetas = [[]]
@@ -19,4 +23,5 @@ def window():
 
 
 if __name__ == '__main__':
+    """Ruta para mostrar la ventana"""
     window()
