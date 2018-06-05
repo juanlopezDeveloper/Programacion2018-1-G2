@@ -6,11 +6,18 @@
 #
 # WARNING! All changes made in this file will be lost!
 
+#Importamos las aplicaciones PyQt5, QtCore, QtGui, QtWidgets y sys
 from PyQt5 import QtCore, QtGui, QtWidgets
 import sys
 
 class Ui_Dialog(object):
+    """Clase para representar algo grafico"""
     def setupUi(self, Dialog):
+        """
+        Instancia para crear una ventana grafica.
+        :param Dialog: La ventana interfaz
+        :return: Una ventana gráfica
+        """
         Dialog.setObjectName("Dialog")
         Dialog.resize(400, 223)
         self.opButton = QtWidgets.QPushButton(Dialog)
@@ -56,6 +63,11 @@ class Ui_Dialog(object):
         QtCore.QMetaObject.connectSlotsByName(Dialog)
 
     def retranslateUi(self, Dialog):
+        """
+        Función que contiene atributos de texto de las etiquetas de la interfaz.
+        :param Dialog: Interfaz con texto.
+        :return: Etiquetas con texto de la interfaz.
+        """
         _translate = QtCore.QCoreApplication.translate
         Dialog.setWindowTitle(_translate("Dialog", "Calculadora"))
         self.opButton.setText(_translate("Dialog", "Operar"))
